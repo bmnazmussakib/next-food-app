@@ -24,7 +24,7 @@ const ProductSchema = new mongoose.Schema(
             type: [
                 {
                     text: {type: String, required: true},
-                    price: {type: Number, required: ture}
+                    price: {type: Number, required: true}
                 }
             ]
         }
@@ -32,4 +32,4 @@ const ProductSchema = new mongoose.Schema(
     {timestamps: true}
 )
 
-export default mongoose.model.Product || mongoose.model("Product", ProductSchema)
+export default mongoose.models.products || mongoose.model("products", ProductSchema)
